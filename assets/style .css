@@ -1,0 +1,43 @@
+* {
+    background-color: darkslategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.all {
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+    border-style: solid;
+    border-radius: 15px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    color: lightslategray;
+}
+
+section {
+    display: flexbox;
+    border-style: dotted;
+    border-color: lightslategrey;
+    border-radius: 15px;
+    color: antiquewhite;
+    margin: 25px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+h1, p {
+    color: antiquewhite;
+}
+
+h2 {
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 15px;
+}
+
+
