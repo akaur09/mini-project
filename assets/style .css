@@ -2,8 +2,14 @@
     background-color: darkslategray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+:root{
+    --main: darkslategray;
+    --text: antiquewhite;
+    --shadow: rgb(139, 226, 255);
+    --box: lightslategray;
+}
 
-header {
+title {
     text-align: center;
 }
 
@@ -14,16 +20,16 @@ header {
     user-select: all;
     border-style: solid;
     border-radius: 15px;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    color: lightslategray;
+    background: linear-gradient(0.25turn, #3f87a6, #4aa4ca, #60c8f5);
+    color: var(--text);
 }
 
-section {
+ code {
     display: flexbox;
     border-style: dotted;
-    border-color: lightslategrey;
+    border-color: var(--box);
     border-radius: 15px;
-    color: antiquewhite;
+    color: var(--text);
     margin: 25px;
     text-align: center;
     transition: all 0.5s ease-in-out;
@@ -32,11 +38,26 @@ section {
 }
 
 h1, p {
-    color: antiquewhite;
+    color: var(--text)
 }
 
 h2 {
     border-style: solid;
-    border-color: lightslategray;
+    border-color: var(--box);
     border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+     .card-code {
+         flex: 0 0 50%;
+         max-width: 50%;
+     }
+}
+@media screen and (max-width: 992px) {
+    header {
+     width: 75%;   
+    }
+    .ccard-code {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
 }

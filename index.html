@@ -6,13 +6,14 @@
 </head>
 
 <header>
-    <h1>CSS Snippet Cheaet Sheet</h1>
-     <p>Ever have trouble recalling the exact system for your favortie CSS code? Givie it a permanent home and add it to this page!</p>  
+    <h1 class="title">CSS Snippet Cheaet Sheet</h1>
+     <p>Ever have trouble recalling the exact system for your favortie CSS code? Give it a permanent home and add it to this page! 
+        Select any snippet below and it'll automatically select all of the code for you to copy.</p>  
  </header>
 
 <body>
     <main>
-        <section>
+        <figure class="card code-card">
             <h2>Flexbox Row</h2>
             <p>Use these three properties to create a Flexbox row layout</p>
             <pre class="all"> 
@@ -22,20 +23,24 @@
                     flex-wrap: wrap;
                 }
             </pre>
-        </section>
-        <section>
-            <h2>Flexbox Column</h2>
-            <p>Use this to create a Flexbox Column layout</p>
+        </figure>
+        <figure class="card code-card">
+            <h2 class="heading">Flexbox Column</h2>
+            <div class="para"> 
+                <p>Use this to create a Flexbox Column layout</p> 
+            </div>
             <pre class="all"> 
                 .column {
                     display: flex;
                     flex-direction: column;
                 }
             </pre>
-        </section>
-        <section>
-            <h2>CSS Grid layout</h2>
-            <p>Build a 12-column layout using CSS grid</p>
+        </figure>
+        <figure class="card code-card">
+            <h2 class="heading">CSS Grid layout</h2>
+            <div class="para">
+                <p>Build a 12-column layout using CSS grid</p>
+            </div>
             <pre class="all"> 
                 .grid {
                     display: grid;
@@ -44,10 +49,12 @@
                     repeat (12, 1fr);
                 }
             </pre>
-        </section>
-        <section>
-            <h2>Linear Gradients</h2>
-            <p>This will create a background linear gradient from top to bottom</p>
+        </figure>
+        <figure class="card code-card"> 
+            <h2 class="heading">Linear Gradients</h2>
+            <div class="para">
+                <p>This will create a background linear gradient from top to bottom</p>
+            </div>
             <pre class="all"> 
                 .liner-gradient-background{
                     background-image: linear-gradient (
@@ -56,10 +63,12 @@
                     );
                 }
             </pre>
-        </section>
-        <section>
-            <h2>Box Transition Glow</h2>
-            <p>Use transition and box shadows to glow on hover</p>
+        </figure>
+        <figure class="card code-card">
+            <h2 class="heading">Box Transition Glow</h2>
+            <div class="para">
+                <p>Use transition and box shadows to glow on hover</p>
+            </div>
             <pre class="all"> 
                 .code-card .card-header {
                     border-radius: 8px;
@@ -72,17 +81,19 @@
                     )
                 }
             </pre>
-        </section>
-        <section>
-            <h2>Overlay Card with Tile</h2>
-            <p>Use position properties and negative margins to raise elements higher than their natural starting point</p>
+        </figure>
+        <figure class="card code-card">
+            <h2 class="heading">Overlay Card with Tile</h2>
+            <div class="para">
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point</p>
+            </div>
             <pre class="all"> 
                 .card-header{
                     position: releative;
                     margin-top: -20px;
                 }
             </pre>
-        </section>
+        </figure>
     </main>
 
 </body>
